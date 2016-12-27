@@ -34,9 +34,7 @@ function convertFile(fileName) {
             return typeof value === 'undefined';
         });
 
-        global.output = finalValues.join(', ');
-
-        output = finalValues.join(', ');
+        output = finalValues.join(',\n');
     });
 
     return output;
